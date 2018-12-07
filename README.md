@@ -1,44 +1,63 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React-admin component for persian date and time input
 
-## Available Scripts
+A react-admin persian(jalaali, jalali, shamsi) date input with / without picker, 
+which allows the user to type or select the date from the picker.
 
-In the project directory, you can run:
+The component is compatible with react 16.
 
-### `npm start`
+This component is only a material-ui wrapper around [material-ui-hichestan-datetimepicker](https://github.com/karianpour/material-ui-hichestan-datetimepicker). For features check that component's page.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Demo
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+As running react-admin site is not trivial, there is no demo for that, but you can see hte base component [demo](https://karianpour.github.io/material-ui-hichestan-datetimepicker/) here.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+Use `npm i ra-hichestan-datetime` in order to install the module.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### Contribution
+Feel free to fork and add some feature. If you have time to do improvement on the U/I that will be appreciated.
+If some one for any reason wants to sand the date and time format in any other format than ISO 8601, we need to inject a date and time formatter into the component.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To start, make a clone and run:
+```bash
+npm install
+npm start
+```
+and browse [http://localhost:3000](http://localhost:3000)
 
-### `npm run eject`
+For publishing
+```bash
+npm run build
+npm publish
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Acknowledgement
+The project is bootstrapped by create-component-lib.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### License
 
-## Learn More
+<sub>MIT License</sub>  
+<sub>Copyright (c) 2017 Kayvan Arianpour (<karianpour@gmail.com>)</sub>  
+<sub>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</sub>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<sub>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</sub>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<sub>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</sub>
