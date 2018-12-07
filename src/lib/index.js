@@ -1,2 +1,3 @@
-import TextInput from "./TextInput";
-export { TextInput };
+import JalaliInput from "./JalaliInput";
+import JalaliField from "./JalaliField";
+export { JalaliInput, JalaliField };
