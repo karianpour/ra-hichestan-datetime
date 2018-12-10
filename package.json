@@ -1,6 +1,23 @@
 {
   "name": "ra-hichestan-datetime",
-  "version": "0.1.1",
+  "version": "0.1.2",
+  "description": "A serie of react-admin components to manipulate persian (jalali) date.",
+  "author": "Hichestan",
+  "copyright.owner": "Hichestan Corp.",
+  "license": "MIT",
+  "keywords": [
+    "React-admin",
+    "Jalali",
+    "Persian",
+    "Datepicker",
+    "DateField",
+    "DateInput"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karianpour/ra-hichestan-datetime"
+  },
+
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
