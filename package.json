@@ -17,7 +17,6 @@
     "type": "git",
     "url": "https://github.com/karianpour/ra-hichestan-datetime"
   },
-
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
@@ -31,10 +30,13 @@
     "build": "rimraf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-react": "^7.0.0",
     "babel-cli": "^6.26.0",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-scripts": "1.1.5",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-scripts": "^1.1.5",
     "rimraf": "^2.6.2"
   },
   "dependencies": {
