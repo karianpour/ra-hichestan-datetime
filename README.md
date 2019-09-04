@@ -21,7 +21,7 @@ Please visit [xcpilots-backoffice](https://github.com/karianpour/xcpilots-backof
 
 ### Contribution
 Feel free to fork and add some feature. If you have time to do improvement on the U/I that will be appreciated.
-If some one for any reason wants to sand the date and time format in any other format than ISO 8601, we need to inject a date and time formatter into the component.
+If some one for any reason wants to send the date and time format in any other format than ISO 8601, we need to inject a date and time formatter into the component.
 
 To start, make a clone and run:
 ```bash
