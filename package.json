@@ -1,6 +1,6 @@
 {
   "name": "ra-hichestan-datetime",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A serie of react-admin components to manipulate persian (jalali) date.",
   "author": "Hichestan",
   "copyright.owner": "Hichestan Corp.",
