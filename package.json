@@ -1,6 +1,6 @@
 {
   "name": "ra-hichestan-datetime",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "description": "A serie of react-admin components to manipulate persian (jalali) date.",
   "author": "Hichestan",
   "copyright.owner": "Hichestan Corp.",
@@ -30,21 +30,20 @@
     "build": "rimraf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
-    "@material-ui/core": "^3.9.2",
-    "material-ui-hichestan-datetimepicker": "^3.0.1",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-scripts": "^3.1.1",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "@material-ui/core": "^4.9.4",
+    "react-hichestan-datetimepicker": "^2.0.9",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "^3.3.1",
     "rimraf": "^2.7.1"
   },
   "pearDependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "@material-ui/core": "^3.9.2",
-    "react-hichestan-datetimepicker": "^2.0.2",
-    "material-ui-hichestan-datetimepicker": "^3.0.1"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "@material-ui/core": "^4.9.4",
+    "react-hichestan-datetimepicker": "^2.0.9"
   }
 }

@@ -5,7 +5,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { addField, FieldTitle } from 'ra-core';
-import { JalaliTimeField } from 'material-ui-hichestan-datetimepicker';
+import { DateTimeInput } from 'react-hichestan-datetimepicker';
+import {
+  Input, InputLabel, FormControl, FormHelperText
+} from '@material-ui/core';
 //the following is a copy of ra-ui-materialui/src/input/sanitizeRestProps.js we have track the changes
 import sanitizeRestProps from './sanitizeRestProps';
 
@@ -98,3 +101,81 @@ JalaliInput.defaultProps = {
 };
 
 export default addField(JalaliInput);
+
+class JalaliTimeField extends React.Component {
+  render() {
+    const {
+      autoComplete,
+      autoFocus,
+      className,
+      defaultValue,
+      disabled,
+      error,
+      FormHelperTextProps,
+      fullWidth,
+      helperText,
+      id,
+      InputLabelProps,
+      inputProps,
+      InputProps,
+      inputRef,
+      label,
+      name,
+      onBlur,
+      onChange,
+      onFocus,
+      placeholder,
+      required,
+      value,
+      classes,
+      noDialog,
+      ...other
+    } = this.props;
+
+    const helperTextId = helperText && id ? `${id}-helper-text` : undefined;
+    const InputElement = (
+      <Input
+        autoComplete={autoComplete}
+        autoFocus={autoFocus}
+        defaultValue={defaultValue}
+        disabled={disabled}
+        fullWidth={fullWidth}
+        name={name}
+        value={value}
+        id={id}
+        inputRef={inputRef}
+        onBlur={onBlur}
+        onChange={onChange}
+        onFocus={onFocus}
+        placeholder={placeholder}
+        inputComponent={noDialog? DateTimeInputSimple : DateTimeInput}
+        inputProps={inputProps}
+        {...InputProps}
+      />
+    );
+
+    return (
+      <FormControl
+        aria-describedby={helperTextId}
+        className={className}
+        error={error}
+        fullWidth={fullWidth}
+        required={required}
+        {...other}
+      >
+        {label && (
+          <InputLabel htmlFor={id} {...InputLabelProps}>
+            {label}
+          </InputLabel>
+        )}
+        {InputElement}
+        {helperText && (
+          <FormHelperText id={helperTextId} {...FormHelperTextProps}>
+            {helperText}
+          </FormHelperText>
+        )}
+      </FormControl>
+    );
+  }
+}
+  
